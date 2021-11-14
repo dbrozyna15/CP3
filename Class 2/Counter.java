@@ -1,29 +1,33 @@
-public class Counter {
-    int counter = 0;
-
-    public void increaseByOne() {
-        counter+=1;
-        System.out.println(counter);
+public class Counter
+{
+    int myCount;
+    int initial = 0;
+    
+    public Counter()  {
+        myCount = initial;
     }
-
-    public void decreaseByOne() {
-        counter-=1;
-        System.out.println(counter);
+    
+    public void increment() {
+        myCount += 1;
     }
-
-    public void increaseByTen() {
-        counter+=10;
-        System.out.println(counter);
+    
+    public void decrement() {
+        myCount -= 1;
     }
-
-    public void decreaseByTen() {
-        counter-=10;
-        System.out.println(counter);
+    
+    public void addTen() {
+        myCount += 10;
     }
-
-    public void resetCounter() {
-        counter = 0;
-        System.out.println(counter);
+    
+    public void subtractTen() {
+        myCount -= 10;
     }
-
+    
+    public void reset() {
+        myCount = initial;
+    }
+    
+    public void printCount() {
+        System.out.println(myCount);
+    }
 }

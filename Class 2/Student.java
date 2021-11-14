@@ -1,33 +1,33 @@
-public class Student {
-
+public class Student
+{
     String name;
     int age;
     String idCard;
-    boolean auth;
-    int semesterNumber;
+    boolean isIdCardValid;
+    int semesterNo;
     float avgGrade;
-
+    
     public void sayHello() {
         System.out.println("Hello!");
     }
-
+    
     public void displayName() {
-        System.out.println(name);
+        System.out.println("Name: " + name);
     }
-
+    
     public void displayAge() {
-        System.out.println(age);
+        System.out.println("Age: " + age);
     }
-
-    public void displayStudentsInfo() {
-        System.out.println(name +"\n"+ semesterNumber +"\n"+ avgGrade);
+    
+    public void displayInfo() {
+       System.out.println(
+       "Name: " + age +
+       "\nSemester: " + semesterNo +
+       "\nAverage grade: " + avgGrade
+       ); 
     }
-
-    public void changeStatus() {
-        auth = !auth;
-    }
-
-    public void displayInfoAndValidation() {
-        System.out.println(name +"\n"+ idCard +"\n"+ auth);
+    
+    public void changeIdCardStatus() {
+        isIdCardValid = !isIdCardValid;
     }
 }

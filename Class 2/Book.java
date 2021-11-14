@@ -1,15 +1,22 @@
-public class Book {
-    String title;
+public class Book
+{
+    String name;
     String author;
     int pages;
-    String genere;
-
-    public void displayInfo() {
-        System.out.println(title +"\n"+ author +"\n"+ genere);
+    boolean isCoverHard;
+    
+    
+    public boolean isLong() {
+        return pages > 400;
     }
-
-    public void displayPagesInfo(){
-        System.out.println(pages);
+    
+    public void printAboutBook() {
+        String res = String.format(
+            "%s by %s%n%s pages.",
+            name,
+            author,
+            pages
+        );
+        System.out.println(res);
     }
-
 }

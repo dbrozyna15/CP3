@@ -1,20 +1,13 @@
-public class Smartphone {
-    String name;
+public class Smartphone
+{
+    int yearOfProduction;
     String brand;
     String model;
-    boolean rooted; 
-    float storage;
-
-    public void displayInfo() {
-        System.out.println(name +"\n"+ brand +"\n"+ model);
-    }
-
-    public void displayStatus(){
-        System.out.println(rooted);
-    }
-
-    public void changeStatus() {
-        rooted = !rooted;
-    }
-
+    String color;
+    boolean hasFaceRecognition;
+    boolean isBrandNew;
+    
+    public void displayCurrentDate() {}
+    public void takeAPhoto() {}
+    public void addPhotoToGalery(int photoId) {}
 }

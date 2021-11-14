@@ -1,15 +1,29 @@
-public class Lamp {
-    boolean power;
-
+public class Lamp
+{
+    boolean state;
+    
+    public Lamp() {
+        state = false;
+    }
+    
+    public boolean isOn() {
+        return state == true;
+    }
+    
     public void switchOn() {
-        power = true;
+        state = true;
     }
-
+    
     public void switchOff() {
-        power = false;
+        state = false;
     }
-
-    public void showStatus(){
-        System.out.println(power);
+    
+    public void printState() {
+        if (state) {
+            System.out.println("The lamp is switched on");
+        }
+        else {
+            System.out.println("The lamp is switched off");
+        }
     }
 }
